@@ -81,6 +81,6 @@ def get_item_store(name):
      for store in stores:
       if stores['name']==name:
          return jsonify({'items':stores['items']})
-      return jsonify({'message':'The item is nit in store'})
+      return jsonify({'message':'The item is not in store'})
 
 app.run(port=5000)
